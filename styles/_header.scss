@@ -1,0 +1,102 @@
+//@import "./vars/customvars";
+$header-color: #FBFBFB;
+$header-fsize: 24px;
+
+header{
+    color: $header-color;
+    font-size: $header-fsize;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    backdrop-filter: blur(20px);
+    position: fixed;
+
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    margin: 20px;
+}
+.navbar > .navbar-nav > .nav-item{
+    // color: yellow doesnt work
+    // color: yellow;
+    // margin: 20px 40px;
+}
+.navbar > .navbar-nav > .nav-item > .nav-link{
+    padding: 0px    ;
+}
+// NOT HEADER
+
+
+.exp{
+    background-image: url('./../static/init_pic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: cover;
+    min-height: 900px;
+
+    position: relative;
+}
+
+.exp:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.init-info{
+    width: 400px;
+    height: 350px;
+
+}
+
+.gap{
+    row-gap: 20px;
+    // background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+}
+
+.main-secondary-text{
+    font-size: 18px;
+}
+
+@media (max-width: 599px) {
+    .exp{
+        min-height: 650px;
+    }    
+}
+
+
+@media (min-width:600px) and (max-width: 799px) {
+    .exp{
+        min-height: 700px;
+    }    
+}
+
+
+@media (min-width:800px) and (max-width: 999px) {
+    .exp{
+        min-height: 800px;
+    }    
+}
+
+
+@media (min-width: 1000px) {
+    .exp{
+        min-height: 900px;
+    }    
+}
+
+
+// .hlink{
+
+//     color: white !important;
+
+// }

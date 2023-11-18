@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        hello
-    </div>
-   
+    <!-- темная тема необходима для цвета ссылок -->
+    <header class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col logo">
+                Hello
+            </div>
+            <!-- возможно а необходим на 1 уровне вложенности <nav>, но да ладно -->
+            <nav class="col navbar">
+                <ul class="navbar-nav flex-row text-light">
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="d-flex align-items-center exp">
+                <div class="ms-p80 init-info d-flex flex-column
+                                justify-content-center align-items-start gap">
+                    <div class="display-6"><strong>Eclipse</strong></div>
+                    <div class="main-secondary-text">Eclipse в ТРК Duality</div>
+                    <div class="main-secondary-text">г. Гродно, ул. Янки Купалы, 887</div>
+                    <div class="btn-group">
+                        <button class="btn main-secondary-text" >Купить билет</button>
+                        <button class="btn main-secondary-text">Контакты и карта</button>
+                    </div>
+                </div>
+                <!-- <img src="./static/init_pic.jpg" alt="_sample_initital_text_description" class=""> -->
+            </div>
+        </section>
+    </main>
+    <div class="m-p35">privet</div>
+    <div class="p-3">suka</div>
+    <div class="filler"></div>
+
 </body>
 </html>

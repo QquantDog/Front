@@ -1,10 +1,19 @@
 @import "./reset";
 @import "./../node_modules/bootstrap/scss/bootstrap";
+@import "./header";
 
-#main{
-    font-size: 12px;
-    background-color: rgb(43, 39, 39);
-    color: var(--bs-orange);
+:root{
+    @each $spacer, $value in $spacers{
+        --theme-spacer-#{$spacer}: #{$value};
+    }
 }
 
+// #main{
+//     font-size: 12px;
+//     background-color: rgb(43, 39, 39);
+//     color: var(--bs-orange);
+// }
+.filler{
+    min-height: 1000px;
+}
 // @media (min-width: -)
