@@ -1,1 +1,18 @@
 1. changed bootstrap variables: added $my-spacers map to default $spacers
+
+to copy from variables:
+----
+$my-spacers: (
+  p10: 10px,
+  p15: 15px,
+  p20: 20px,
+  p25: 25px,
+  p30: 30px,
+  p35: 35px,
+  p40: 40px,
+  p60: 60px,
+  p80: 80px,
+);
+
+$spacers: map-merge($spacers , $my-spacers );
+----
