@@ -24,8 +24,8 @@ $main-color: rgb(219, 209, 219);
 
 .main-info-notresponsive {
     row-gap: 20px;
-    background-color: rgba(73, 72, 72, 0.6);
-    border-radius: 50px;
+    background-color: rgba(10, 10, 10, 0.8);
+    border-radius: 10px;
     backdrop-filter: blur(20px);
     height: 340px;
 }
@@ -64,6 +64,26 @@ $main-color: rgb(219, 209, 219);
     width: 95%;
 }
 
+// 
+// override defaluta btn behaviuor
+// 
+.btn{
+    border-radius: 25px;
+    border-color: rgb(206, 88, 88);
+    border-style: solid;
+
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(206, 88, 88);
+    color: black;
+}
+
+// remove text decoration from links in Залы
+.hall{
+    text-decoration: none;
+    width: 400px;
+}
 
 @media (max-width: 599px) {
     .exp {

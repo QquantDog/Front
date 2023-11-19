@@ -15521,8 +15521,8 @@ header {
 
 .main-info-notresponsive {
   row-gap: 20px;
-  background-color: rgba(73, 72, 72, 0.6);
-  border-radius: 50px;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 10px;
   backdrop-filter: blur(20px);
   height: 340px;
 }
@@ -15555,6 +15555,23 @@ header {
 
 .main-info-responsive > .btn-row-custom {
   width: 95%;
+}
+
+.btn {
+  border-radius: 25px;
+  border-color: rgb(206, 88, 88);
+  border-style: solid;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(206, 88, 88);
+  color: black;
+}
+
+.hall {
+  text-decoration: none;
+  width: 400px;
 }
 
 @media (max-width: 599px) {
@@ -15595,6 +15612,65 @@ header {
     font-size: 18px;
   }
 }
+.card-section {
+  background-color: rgb(27, 27, 27) !important;
+}
+
+.card-img {
+  width: 350px;
+}
+
+.img-wrapper {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheader {
+  color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3px;
+}
+.subheader .subheader-main {
+  font-weight: bold;
+  font-size: 16px;
+}
+.subheader .subheader-aux {
+  font-size: 14px;
+}
+
+.bg-dropdown-override {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(40px);
+}
+
+.seat-img {
+  width: 100px;
+}
+
+.seat-section-content-wrapper, .seat-section-header {
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.seat-section-content-wrapper > div[class=row]:nth-child(even) {
+  background-color: rgba(210, 210, 190, 0.7);
+}
+
+.seat-section-content-wrapper > div[class=row]:nth-child(odd) {
+  background-color: rgba(190, 190, 210, 0.7);
+}
+
+.seat-section-header {
+  font-size: 24px;
+  font-style: italic;
+}
+
 :root {
   --theme-spacer-0: 0;
   --theme-spacer-1: 0.25rem;

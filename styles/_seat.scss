@@ -1,0 +1,26 @@
+.seat-img{
+    width: 100px;
+}
+
+.seat-section-content-wrapper, .seat-section-header{
+    background-color: rgba(200,200,200, 0.7);
+}
+
+.seat-section-content-wrapper > div[class="row"]:nth-child(even){
+    background-color: rgba(210,210,190,0.7);
+}
+
+
+.seat-section-content-wrapper > div[class="row"]:nth-child(odd){
+    background-color: rgba(190,190,210,0.7);
+}
+
+// .seat-section-content-wrapper:nth-child(2n+1){
+//     background-color: rgba(170,170,240,0.8);
+// }
+
+.seat-section-header{
+    font-size: 24px;
+    font-style: italic;
+}
+
