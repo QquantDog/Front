@@ -15655,7 +15655,7 @@ header {
 }
 
 .seat-section-content-wrapper, .seat-section-header {
-  background-color: rgba(200, 200, 200, 0.7);
+  background-color: rgba(180, 180, 180, 0.7);
 }
 
 .seat-section-content-wrapper > div[class=row]:nth-child(even) {
@@ -15666,11 +15666,44 @@ header {
   background-color: rgba(190, 190, 210, 0.7);
 }
 
+.footer-upper {
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.footer-lower {
+  background-color: rgb(0, 0, 0);
+}
+
 .seat-section-header {
   font-size: 24px;
   font-style: italic;
 }
 
+.footer-link-item {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.footer-link-header {
+  margin: 10px;
+  margin-bottom: margin-header-bottom;
+  font-size: 28px;
+  font-style: bold;
+}
+
+.footer-rights-reserved {
+  font-size: 18px;
+  color: rgb(240, 240, 240);
+}
+
+@media (max-width: 768px) {
+  .footer-link-header {
+    text-align: center;
+  }
+  .footer-link-item {
+    text-align: center;
+  }
+}
 :root {
   --theme-spacer-0: 0;
   --theme-spacer-1: 0.25rem;

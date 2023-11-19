@@ -4,6 +4,7 @@
 @import "./firstsection";
 @import "./card";
 @import "./seat";
+@import "./footer";
 
 :root{
     @each $spacer, $value in $spacers{
@@ -11,12 +12,8 @@
     }
 }
 
-// #main{
-//     font-size: 12px;
-//     background-color: rgb(43, 39, 39);
-//     color: var(--bs-orange);
-// }
+
 .filler{
     min-height: 1000px;
 }
-// @media (min-width: -)
+

@@ -1,0 +1,36 @@
+$margin-per-link-item: 10px;
+$margin-header-bottom: 20px;
+$item-size: 16px;
+
+.footer-link-item{
+    margin: $margin-per-link-item;
+    font-size: $item-size;
+}
+.footer-link-header{
+    margin: $margin-per-link-item;
+    margin-bottom: margin-header-bottom;
+    font-size: $item-size * 1.75;
+
+    font-style: bold;
+}
+
+.footer-rights-reserved{
+    font-size: 18px;
+    color: rgba(240,240,240,1);
+}
+
+.footer-lower{
+    
+}
+
+@media (max-width: 768px){
+
+    .footer-link-header{
+        text-align: center;
+    }
+
+    .footer-link-item{
+        text-align: center;
+    }
+
+}
