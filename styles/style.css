@@ -15519,19 +15519,42 @@ header {
   left: 0px;
 }
 
-.init-info {
-  width: 400px;
+.main-info-notresponsive {
+  row-gap: 20px;
+  background-color: rgba(73, 72, 72, 0.6);
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  height: 340px;
+}
+
+.main-primary-text, .main-secondary-text {
+  color: rgb(219, 209, 219);
+}
+
+.main-info-responsive {
   height: 350px;
 }
 
-.gap {
-  row-gap: 20px;
-  border-radius: 50px;
-  backdrop-filter: blur(20px);
+.main-info-notresponsive > .btn-group > .btn {
+  color: rgb(219, 209, 219);
+  font-size: 22px;
 }
 
-.main-secondary-text {
-  font-size: 18px;
+.main-info-responsive {
+  background-color: rgb(26, 25, 25);
+}
+
+.main-info-responsive > .btn-group > .btn {
+  color: rgb(219, 209, 219);
+  font-size: 22px;
+}
+
+.main-info-notresponsive > .btn-row-custom {
+  width: 90%;
+}
+
+.main-info-responsive > .btn-row-custom {
+  width: 95%;
 }
 
 @media (max-width: 599px) {
@@ -15552,6 +15575,24 @@ header {
 @media (min-width: 1000px) {
   .exp {
     min-height: 900px;
+  }
+}
+@media (max-width: 768px) {
+  .main-info-notresponsive {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  .main-info-responsive {
+    display: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .main-secondary-text {
+    font-size: 22px;
+  }
+  .main-info-responsive > .btn-group > .btn {
+    font-size: 18px;
   }
 }
 :root {

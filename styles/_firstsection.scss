@@ -1,0 +1,116 @@
+$main-color: rgb(219, 209, 219);
+
+.exp {
+    background-image: url('./../static/init_pic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: cover;
+    min-height: 900px;
+
+    position: relative;
+}
+
+.exp:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.main-info-notresponsive {
+    row-gap: 20px;
+    background-color: rgba(73, 72, 72, 0.6);
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    height: 340px;
+}
+
+.main-primary-text, .main-secondary-text {
+    color: $main-color;
+}
+
+// 
+// 
+.main-info-responsive{
+    height: 350px;
+}
+
+.main-info-notresponsive > .btn-group >.btn{
+    color: $main-color;
+    font-size:  22px;
+}
+
+
+.main-info-responsive{ 
+    background-color: rgba(26, 25, 25, 1);
+}
+
+.main-info-responsive > .btn-group >.btn{
+    color: $main-color;
+    font-size:  22px;
+}
+
+
+.main-info-notresponsive > .btn-row-custom{
+    width: 90%;
+}
+
+.main-info-responsive > .btn-row-custom{
+    width: 95%;
+}
+
+
+@media (max-width: 599px) {
+    .exp {
+        min-height: 650px;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 799px) {
+    .exp {
+        min-height: 700px;
+    }
+}
+
+
+@media (min-width:800px) and (max-width: 999px) {
+    .exp {
+        min-height: 800px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .exp {
+        min-height: 900px;
+    }
+}
+
+// important display
+@media (max-width: 768px){
+    .main-info-notresponsive{
+        display: none !important;
+        // background-color: black;
+    }
+}
+@media (min-width: 769px){
+    .main-info-responsive{
+        display: none !important;
+        // background-color: black;
+    }
+}
+
+@media (max-width: 600px){
+    .main-secondary-text{
+        font-size:  22px;
+    }
+    .main-info-responsive > .btn-group >.btn{
+        font-size:  18px;
+    }
+}
