@@ -1,0 +1,18 @@
+.core-item{
+    height: 800px;
+    position: relative;
+}
+
+.core-img-wrapper{
+    position: absolute;
+    z-index: -1;
+    background-image: url('./../static/main-core/1.jpg');
+    background-color: rgba(100,100,100,1);
+    background-size: 85%;
+    background-repeat: none;
+    background-position: left center;
+    background-size: cover;
+    height: 800px;
+}
+
+

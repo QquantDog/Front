@@ -6,6 +6,7 @@ $main-color: rgb(219, 209, 219);
     background-position: 50% 70%;
     background-size: cover;
     min-height: 900px;
+    
 
     position: relative;
 }
@@ -32,6 +33,28 @@ $main-color: rgb(219, 209, 219);
 
 .main-primary-text, .main-secondary-text {
     color: $main-color;
+}
+
+.card-layout{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    max-height: 400px;
+    overflow-y: scroll;
+}
+// bootstrap styles
+.card-title, .card-text{
+    color: rgba(240,240,230, 0.9);
+    background-color: rgba(40, 40,40, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+
+.card-text{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 // 

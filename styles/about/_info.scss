@@ -1,0 +1,48 @@
+.return-bilets{
+    background-color: rgba(39,39,42);
+    color: rgba(255,255,255,0.8);
+}
+
+// все это можно вложить друг в друга
+
+.return-bilets-paragraph{
+    padding-bottom: 80px;
+    line-height: 26px;
+}
+
+.return-bilets-paragraph > ul > li, .return-bilets-paragraph > ol > li{
+    margin-bottom: 10px;
+}
+
+
+.return-bilets-paragraph > ul, .return-bilets-paragraph > ol{
+    list-style-position: outside;
+}
+
+.return-bilets-paragraph > ul > li:before{
+    // list-style-type: ;
+    content: "— ";
+    color: rgba(255,1,1,0.8);
+}
+.return-bilets-paragraph > ol{
+    list-style-type: decimal;
+}
+
+
+.about-header{
+    text-align: center;
+    font-style: bold;
+    font-size: 60px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .about-header{font-size: 50px;}
+}
+
+@media (min-width: 800px) and (max-width: 1201px){
+    .about-header{font-size: 45px;}
+}
+
+@media (max-width: 801px){
+    .about-header{font-size: 40px;}
+}

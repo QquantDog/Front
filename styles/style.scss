@@ -1,13 +1,21 @@
 @import "./reset";
 @import "./custom_delivered_bootstrap";
 
-
-
 @import "./header";
 @import "./firstsection";
 @import "./card";
+@import "./main_core";
 @import "./seat";
 @import "./footer";
+
+@import "./about/about";
+@import "./contacts/contacts";
+
+// for restricting transfer of different words due to different resolutions 
+.not-transferable-by-row{
+    display: block;
+    width: initial;
+}
 
 :root{
     @each $spacer, $value in $spacers{

@@ -16,6 +16,9 @@ $my-spacers: (
   p40: 40px,
   p60: 60px,
   p80: 80px,
+  p120: 120px,
+  p160: 160px,
+  p200: 200px,
 );
 
 $spacers: map-merge($spacers , $my-spacers );
