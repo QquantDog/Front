@@ -1,18 +1,35 @@
 .core-item{
     height: 800px;
     position: relative;
+    background-color: #27272a;
+
 }
 
 .core-img-wrapper{
     position: absolute;
-    z-index: -1;
+    z-index: +1;
     background-image: url('./../static/main-core/1.jpg');
-    background-color: rgba(100,100,100,1);
-    background-size: 85%;
+    //background-color: rgba(100,100,100,1);
+    //background-size: 85%;
     background-repeat: none;
     background-position: left center;
     background-size: cover;
     height: 800px;
+    width: 100%;
 }
 
-
+.core-text-block{
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    color: rgba(255,255,255,0.85);
+    
+}
+.core-header{
+    font-size: 30px;
+    padding: 10px auto;
+}
+.core-text{
+    font-size: 20px;
+    padding: 15px auto;
+}
