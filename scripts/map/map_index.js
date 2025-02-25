@@ -37,10 +37,6 @@ window.onload = function(){
             });
         }
 
-        // dict.set('grodno',map[0]);
-        // dict.set('minsk', map[1]);
-        // dict.set('random_place', map[2]);
-
     }
     
     initMap();
