@@ -1,0 +1,33 @@
+@import "./reset";
+@import "./custom_delivered_bootstrap";
+
+@import "./header";
+@import "./firstsection";
+@import "./card";
+@import "./main_core";
+@import "./seat";
+@import "./footer";
+
+@import "./about/about";
+@import "./contacts/contacts";
+
+@import "./pros/pros";
+@import "./from";
+
+// for restricting transfer of different words due to different resolutions 
+.not-transferable-by-row{
+    display: block;
+    width: initial;
+}
+
+:root{
+    @each $spacer, $value in $spacers{
+        --theme-spacer-#{$spacer}: #{$value};
+    }
+}
+
+
+.filler{
+    min-height: 1000px;
+}
+

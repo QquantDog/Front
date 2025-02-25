@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Cinema</title>
+</head>
+<body>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <header class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col logo">
+                Ambient кинотеатры
+            </div>
+            <!-- возможно а необходим на 1 уровне вложенности <nav>, но да ладно -->
+            <nav class="col navbar">
+                <ul class="navbar-nav flex-row text-light">
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link active" href="./index.html">Главная</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <!-- <a class="nav-link" href="#">Все кинотеатры</a> -->
+                        <a class="nav-link" href="./pros.html">Преимущества</a>
+
+
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="./contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="./about.html">Инфо</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="return-bilets">
+            <div class="container-md">
+                <div class="row">
+                    <!-- <div class="col-2"></div> -->
+                    <div class="pb-p80 pt-p160 d-flex text-align-center about-header">
+                        Правила возврата билетов
+                    </div>
+                    <!-- <div class="col-3"></div> -->
+                </div>
+
+                <div class="row">
+                    <!-- <div class="col-0 col-xl-1 col-xxl-2 "></div> -->
+                    <div class="about-column">
+                        <div class="return-bilets-paragraph">
+                            <p>Информация, содержащаяся в билете, подлежит проверке зрителем в момент приобретения билета.
+                            Приобретенные зрителями билеты обмену не подлежат за исключением случаев, установленных законодательством.
+                            Утерянный зрителем билет не возобновляется, стоимость его не возмещается.</p>
+                            <p>Кинотеатр обязан возместить зрителю по его требованию стоимость билета в случаях:</p>
+                            <ul>
+                                <li>отмены киносеанса;</li>
+                                <li>отказа зрителя до начала киносеанса от просмотра фильма, предложенного взамен объявленного;</li>
+                                <li>отказа зрителю в допуске в место показа фильма по причине недостижения им возраста, соответствующего возрастной категории фильма, в том числе в случае непредоставления (предоставления недостоверной) информации о возрастной категории соответствующего фильма при реализации билетов;</li>
+                                <li>отказа зрителя от просмотра объявленного фильма и возврата билета в кассу исполнителя не позднее чем за 10 минут до начала киносеанса;</li>
+                                <li>досрочного прекращения киносеанса по вине исполнителя.</li>
+                            </ul>
+                            <p>Для упрощения процедуры возврата билетов РЕКОМЕНДУЕМ приобретать билеты на разные сеансы отдельными платежами.</p>
+                            <p>Возмещение стоимости билета осуществляется в установленном законодательством порядке при возврате зрителем билета в кассу производителя киновидеоуслуг.
+                            Возмещение стоимости билета осуществляется при возврате зрителем билета.</p>
+                            <ol>
+                                <li>Возврат билета может быть произведен только в кассе того кинотеатра, куда он был приобретен, не позднее, чем за 10 минут до начала сеанса.</li>
+                                <li>Для получения денежных средств необходимо написать заявление.</li>
+                                <li>Билеты, оплаченные в кассе кинотеатра, при наличии чека возмещаются наличными денежными средствами.</li>
+                                <li>Билеты, оплаченные на сайте кинотеатра, возмещаются на банковскую карточку клиента в установленный законодательством срок. 
+                                Внимание: Возврат денежных средств осуществляется на ту карточку, с которой была произведена оплата.</li>
+                            </ol>
+                            <p>Пожалуйста, внимательно проверяйте дату и время сеанса, а также адрес кинотеатра, в который вы приобретаете билет.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-0 col-xl-2 col-xxl-4"></div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid footer-upper">
+            <!-- <div class="row">
+                <div class="col p-p40">Все ссылки просто для вида</div>
+            </div> -->
+            <div class="row p-p80">
+                <div class="col-1"></div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Афиша</div>
+                    <div class="footer-link-item">Сейчас в кино</div>
+                    <div class="footer-link-item">Скоро</div>
+                    <div class="footer-link-item">ScreenX</div>
+                    <div class="footer-link-item">Звук Dolby Atmos</div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Кино</div>
+                    <div class="footer-link-item">cinema-1</div>
+                    <div class="footer-link-item">cinemacinema-2</div>
+                    <div class="footer-link-item">cinema-3</div>
+                    <div class="footer-link-item">qqqqqqqqqq-4</div>
+                    <div class="footer-link-item">cinemacinema-5</div>
+                    <div class="footer-link-item">cinema-6</div>
+                    <div class="footer-link-item">qqqqqqqqggg-7</div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Еда и напитки</div>
+                    <div class="footer-link-item">Комбо-блюда</div>
+                    <div class="footer-link-item">Попкорн</div>
+                    <div class="footer-link-item">Десерты</div>
+                    <div class="footer-link-item">Мороженое</div>
+                    <div class="footer-link-item">Снеки</div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Инфо</div>
+                    <div class="footer-link-item">Возврат билетов</div>
+                    <div class="footer-link-item">Акции</div>
+                    <div class="footer-link-item">Новости</div>
+                    <div class="footer-link-item">Возрастной рейтинг</div>
+                    <div class="footer-link-item">Правила посещения кинотеаторв</div>
+                    <div class="footer-link-item">Карьера и вакансии</div>
+                </div>
+
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer-lower">
+            <div class="row py-p20 justify-content-center align-items-end">
+                <div class="col-12 col-sm col-md-4 d-flex justify-content-center"><img class="d-block" src="./static/eclipse/eclipse_logo_norm.png"></div>
+                <div class="col-12 col-sm col-md-2 d-flex justify-content-center footer-rights-reserved">Cinema</div>
+                <div class="col-12 col-sm col-md-4 d-flex justify-content-center footer-rights-reserved">All rigths reserved&trade;, 2023</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

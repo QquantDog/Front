@@ -1,0 +1,159 @@
+$main-color: rgb(219, 209, 219);
+
+.exp {
+    background-image: url('./../static/init_pic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: cover;
+    min-height: 900px;
+    
+
+    position: relative;
+}
+
+.exp:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.main-info-notresponsive {
+    row-gap: 20px;
+    background-color: rgba(10, 10, 10, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    height: 340px;
+}
+
+.main-primary-text, .main-secondary-text {
+    color: $main-color;
+}
+
+.card-layout{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    max-height: 400px;
+    overflow-y: scroll;
+}
+// bootstrap styles
+.card-title, .card-text{
+    color: rgba(240,240,230, 0.9);
+    background-color: rgba(40, 40,40, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+
+.card-text{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+// 
+// 
+.main-info-responsive{
+    height: 350px;
+}
+
+.main-info-notresponsive > .btn-group >.btn{
+    color: $main-color;
+    font-size:  22px;
+}
+
+
+.main-info-responsive{ 
+    background-color: rgba(26, 25, 25, 1);
+}
+
+.main-info-responsive > .btn-group >.btn{
+    color: $main-color;
+    font-size:  22px;
+}
+
+
+.main-info-notresponsive > .btn-row-custom{
+    width: 90%;
+}
+
+.main-info-responsive > .btn-row-custom{
+    width: 95%;
+}
+
+// 
+// override defaluta btn behaviuor
+// 
+.btn{
+    border-radius: 25px;
+    border-color: rgb(206, 88, 88);
+    border-style: solid;
+
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(206, 88, 88);
+    color: black;
+}
+
+// remove text decoration from links in Залы
+.hall{
+    text-decoration: none;
+    width: 400px;
+}
+
+@media (max-width: 599px) {
+    .exp {
+        min-height: 650px;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 799px) {
+    .exp {
+        min-height: 700px;
+    }
+}
+
+
+@media (min-width:800px) and (max-width: 999px) {
+    .exp {
+        min-height: 800px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .exp {
+        min-height: 900px;
+    }
+}
+
+// important display
+@media (max-width: 768px){
+    .main-info-notresponsive{
+        display: none !important;
+        // background-color: black;
+    }
+}
+@media (min-width: 769px){
+    .main-info-responsive{
+        display: none !important;
+        // background-color: black;
+    }
+}
+
+@media (max-width: 600px){
+    .main-secondary-text{
+        font-size:  22px;
+    }
+    .main-info-responsive > .btn-group >.btn{
+        font-size:  18px;
+    }
+}

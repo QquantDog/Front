@@ -1,0 +1,41 @@
+.card-section{
+    background-color: rgb(27, 27, 27) !important;
+}
+
+.card-img{
+    width: 350px;
+}
+
+.img-wrapper{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader{
+    color: rgba(240,240,240,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 3px;
+
+    .subheader-main{
+        font-weight: bold;
+        font-size: 16px ;
+    }
+    .subheader-aux{
+        font-size: 14px;
+    }
+}
+
+.bg-dropdown-override{
+    border-radius: 5px;
+    //border
+    background-color: rgba(255,255,255,0.1) !important;
+    backdrop-filter: blur(40px);
+}
+

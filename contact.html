@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <script src="./scripts/map/map_index.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Cinema</title>
+</head>
+<body>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <header class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col logo">
+                Ambient кинотеатры
+            </div>
+            <!-- возможно а необходим на 1 уровне вложенности <nav>, но да ладно -->
+            <nav class="col navbar">
+                <ul class="navbar-nav flex-row text-light">
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link active" href="./index.html">Главная</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <!-- <a class="nav-link" href="#">Все кинотеатры</a> -->
+                        <a class="nav-link" href="./pros.html">Преимущества</a>
+
+
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="./contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item me-xxl-p80 me-xl-p60 me-lg-p40 me-lg-p30 me-md-p20 me-sm-p15 me-p10">
+                        <a class="nav-link" href="./about.html">Инфо</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacts"> 
+        <section class="contact-section">
+            
+            <div class="contact-header">
+                <h1 class="contact-header-main">Контакты</h1>
+                <p class="contact-header-sub">Единый номер сети: <span class="contact-telephone">+375993369050</span></p>
+            </div>
+            <div class="contact-block">
+                <div class="contact-item">
+                    <p class="contact-item-main">Кинопространство eclipse в ТРЦ <span class="not-transferable-by-row">«Dana Mall»</span></p>
+                    <p class="contact-item-text">г. Минск, ул. П. Мстиславца, 11, ТРЦ «Dana Mall», 3 этаж</p>
+                    <p class="contact-item-text">E-mail: info@eclipse.by</p>
+                    <p class="contact-item-text">Время работы: вс-чт с 10:00 до 00:00; пт-сб с 10:00 до 01:30</p>
+                </div>
+                <div class="map-wrapper">
+                    <p class="map-header">Карта проезда:</p>
+                    <div class="map" id="map-realisation-0"></div>
+                </div>
+            </div>
+
+
+            <div class="contact-block">
+                <div class="contact-item">
+                    <p class="contact-item-main">Кинотеатр Silver Screen в ТРЦ <span class="not-transferable-by-row">«ARENA city»</span></p>
+                    <p class="contact-item-text">г. Минск пр. Победителей, 84, ТРЦ «ARENA city», 2-4 этаж</p>
+                    <p class="contact-item-text">E-mail: info@eclipse.by</p>
+                    <p class="contact-item-text">Время работы: пн-пт с 13:00 до 23:00; сб-вс с 11:00 до 23:00</p>
+                </div>
+                <div class="map-wrapper">
+                    <p class="map-header">Карта проезда:</p>
+                    <div class="map" id="map-realisation-1"></div>
+                </div>
+            </div>
+
+
+            <div class="contact-block">
+                <div class="contact-item">
+                    <p class="contact-item-main">Кинопространство eclips в <span class="not-transferable-by-row">ТРК Triniti</span></p>
+                    <p class="contact-item-text">г. Гродно, пр-т Янки Купалы 87</p>
+                    <p class="contact-item-text">E-mail: info@eclipse.by</p>
+                    <p class="contact-item-text">Время работы: вс-чт с 10:00 до 23:00; пт-сб с 10:00 до 01:00</p>
+                </div>
+                <div class="map-wrapper">
+                    <p class="map-header">Карта проезда:</p>
+                    <div class="map" id="map-realisation-2"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid footer-upper">
+            <!-- <div class="row">
+                <div class="col p-p40">Все ссылки просто для вида</div>
+            </div> -->
+            <div class="row p-p80">
+                <div class="col-1"></div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Афиша</div>
+                    <div class="footer-link-item">Сейчас в кино</div>
+                    <div class="footer-link-item">Скоро</div>
+                    <div class="footer-link-item">ScreenX</div>
+                    <div class="footer-link-item">Звук Dolby Atmos</div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Кино</div>
+                    <div class="footer-link-item">cinema-1</div>
+                    <div class="footer-link-item">cinemacinema-2</div>
+                    <div class="footer-link-item">cinema-3</div>
+                    <div class="footer-link-item">qqqqqqqqqq-4</div>
+                    <div class="footer-link-item">cinemacinema-5</div>
+                    <div class="footer-link-item">cinema-6</div>
+                    <div class="footer-link-item">qqqqqqqqggg-7</div>
+                </div>
+
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Еда и напитки</div>
+                    <div class="footer-link-item">Комбо-блюда</div>
+                    <div class="footer-link-item">Попкорн</div>
+                    <div class="footer-link-item">Десерты</div>
+                    <div class="footer-link-item">Мороженое</div>
+                    <div class="footer-link-item">Снеки</div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="footer-link-header">Инфо</div>
+                    <div class="footer-link-item">Возврат билетов</div>
+                    <div class="footer-link-item">Акции</div>
+                    <div class="footer-link-item">Новости</div>
+                    <div class="footer-link-item">Возрастной рейтинг</div>
+                    <div class="footer-link-item">Правила посещения кинотеаторв</div>
+                    <div class="footer-link-item">Карьера и вакансии</div>
+                </div>
+
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer-lower">
+            <div class="row py-p20 justify-content-center align-items-end">
+                <div class="col-12 col-sm col-md-4 d-flex justify-content-center"><img class="d-block" src="./static/eclipse/eclipse_logo_norm.png"></div>
+                <div class="col-12 col-sm col-md-2 d-flex justify-content-center footer-rights-reserved">Cinema</div>
+                <div class="col-12 col-sm col-md-4 d-flex justify-content-center footer-rights-reserved">All rigths reserved&trade;, 2023</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});</script>
+
+
+</body>
+</html>
